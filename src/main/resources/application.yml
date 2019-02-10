@@ -1,0 +1,31 @@
+#person:
+#  lastName: zhangsam
+#  age: 18
+#  boss: false
+#  birtg: 2017/12/12
+#  maps: {k1: v1,k2: 12}
+#  lists:
+#    - lisi
+#    - zhaoliu
+#    - qianwu
+#    - wangjiu
+#  dog:
+#    name: 小狗狗！
+#    age: 99
+#--spring.profiles.active=dev
+#命令行激活
+server:
+  port: 8080
+#spring:
+#  profiles:
+#    active: dev
+---
+server:
+  port: 8085
+spring:
+  profiles: dev
+---
+server:
+  port: 8086
+spring:
+  profiles: prod
